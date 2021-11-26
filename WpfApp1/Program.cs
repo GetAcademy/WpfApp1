@@ -22,14 +22,13 @@ namespace WpfApp1
             var clickerPanel5 = new ClickerPanel();
 
             var stackPanel = new StackPanel();
-            stackPanel.Children.Add(clickerPanel1.Panel);
-            stackPanel.Children.Add(clickerPanel2.Panel);
-            stackPanel.Children.Add(clickerPanel3.Panel);
-            stackPanel.Children.Add(clickerPanel4.Panel);
-            stackPanel.Children.Add(clickerPanel5.Panel);
+            stackPanel.Children.Add(clickerPanel1);
+            stackPanel.Children.Add(clickerPanel2);
+            stackPanel.Children.Add(clickerPanel3);
+            stackPanel.Children.Add(clickerPanel4);
+            stackPanel.Children.Add(clickerPanel5);
 
             window.Content = stackPanel;
-
 
             app.Run(window);
         }
