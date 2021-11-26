@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -15,19 +16,24 @@ namespace WpfApp1
             var app = new Application();
             var window = new Window();
 
-            var clickerPanel1 = new ClickerPanel();
-            var clickerPanel2 = new ClickerPanel();
-            var clickerPanel3 = new ClickerPanel();
-            var clickerPanel4 = new ClickerPanel();
-            var clickerPanel5 = new ClickerPanel();
+            //var clickerPanel1 = new ClickerPanel();
+            //var clickerPanel2 = new ClickerPanel();
+            //var clickerPanel3 = new ClickerPanel();
+            //var clickerPanel4 = new ClickerPanel();
+            //var clickerPanel5 = new ClickerPanel();
 
             var stackPanel = new StackPanel();
-            stackPanel.Children.Add(clickerPanel1);
-            stackPanel.Children.Add(clickerPanel2);
-            stackPanel.Children.Add(clickerPanel3);
-            stackPanel.Children.Add(clickerPanel4);
-            stackPanel.Children.Add(clickerPanel5);
+            //stackPanel.Children.Add(clickerPanel1);
+            //stackPanel.Children.Add(clickerPanel2);
+            //stackPanel.Children.Add(clickerPanel3);
+            //stackPanel.Children.Add(clickerPanel4);
+            //stackPanel.Children.Add(clickerPanel5);
 
+            for (var i = 0; i < 10; i++)
+            {
+                stackPanel.Children.Add(
+                    new ClickerPanel());
+            }
             window.Content = stackPanel;
 
             app.Run(window);
