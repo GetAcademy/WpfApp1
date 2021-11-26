@@ -34,6 +34,7 @@ namespace WpfApp1
                 stackPanel.Children.Add(
                     new ClickerPanel());
             }
+
             window.Content = stackPanel;
 
             app.Run(window);
